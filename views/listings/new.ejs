@@ -1,0 +1,42 @@
+<% layout("/Layouts/boilerPlate")%>
+<h3>Create New Listing</h3>
+<div class="row">
+    <div class="col-8 offset-2">
+        <form action="/listings" method="post" novalidate class="needs-validation">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" name="listing[title]" id="title" placeholder="Enter title" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea type="text" name="listing[description]" id="description" placeholder="Enter description" class="form-control" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="image" class="form-label">Image</label>
+                <input type="text" name="listing[image]" id="image"  placeholder="Enter image URL/link" class="form-control" required>
+            </div>
+
+            <div class="row offset-1">
+                <div class="mb-3 col-md-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" name="listing[price]" id="price" placeholder="Enter price" class="form-control" required>
+                </div>
+
+                <div class="mb-3 col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" name="listing[country]" id="country" placeholder="Enter Country" class="form-control">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" name="listing[location]" id="location" placeholder="Enter Location" class="form-control">
+            </div>
+
+            <button class="add-btn btn btn-dark mb-3">Add</button>
+        </form>
+    </div>
+</div>
+<script src="/Public/js/script.js"></script>

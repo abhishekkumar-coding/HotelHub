@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+.f-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+    background: hsl(0, 0%, 68%);
+}
+.f-info-socials{
+    font-size: 2rem;
+}
+.f-info-socials i{
+    margin-inline:0.5rem;
+}
+.f-info-links a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #222222;
+}
+
+/* CARDS STYLING */
+.row{
+    width: 1120px !important;
+    position: relative;
+    right: 8%;
+}
+.card{
+    border: none !important;
+    margin-bottom: 2rem !important;
+    width: 16rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    padding: 0% !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card img{
+    height: 17rem;
+}
+.listing-link{
+    text-decoration: none;
+}
+
+.listing-link:hover{
+    text-decoration: underline;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.3;
+    background-color: white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position: absolute;
+    bottom: 0px;
+}
+/* ADD BUTTON */
+.add-btn{
+    background-color: #fe424d !important;
+    border: none;
+
+}

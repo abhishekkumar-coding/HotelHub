@@ -1,0 +1,23 @@
+<% layout("/Layouts/boilerPlate") %>
+<body>
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
+        <% for(let listing of listings){ %>
+            <a href="/listings/<%= listing._id %>" class="listing-link">
+                <div class="card">
+                    <img src="<%= listing.image %>" class="card-img-top" alt="Listings">
+                    <div class="card-img-overlay"></div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <b><%= listing.title %></b><br>
+                            <% if(listing.price !== null && listing.price !== undefined) { %>
+                                &#8377; <%= listing.price.toLocaleString("en-IN") %> /Night
+                            <% } else { %>
+                                Price not available
+                            <% } %>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        <% } %>
+    </div>
+</body>
